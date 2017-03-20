@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">My Event</string>
+    <string name="google_map_api_key">AIzaSyD6LeT6LFy9H13WLi4jF9PyuwKMNhtUR14</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_news_feed">News Feed</string>
+    <string name="nav_titulo_evento">EVENTO</string>
+    <string name="nav_agenda">Agenda</string>
+    <string name="nav_conferencistas">Conferencistas</string>
+    <string name="nav_asistentes">Asistentes</string>
+    <string name="nav_instalaciones">Instalaciones</string>
+    <string name="nav_patrocinadores">Patrocinadores</string>
+    <string name="nav_mapas">Mapas</string>
+    <string name="nav_titulo_comunidad">COMUNIDAD</string>
+    <string name="nav_noticias">Noticias</string>
+    <string name="nav_faqs">FAQS</string>
+    <string name="nav_fotos">Fotos</string>
+    <string name="nav_titulo_perfil">PERFIL</string>
+    <string name="nav_mensajes">Mensajes</string>
+    <string name="nav_ajustes">Ajustes</string>
+    <string name="app_name_newsfeed">News Feed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="published_on">Publicado el</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, iaculis in ullamcorper id, ultrices at sapien. Nunc non lacus sagittis lacus lacinia gravida rhoncus non nibh.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, iaculis in ullamcorper id, ultrices at sapien. Nunc non lacus sagittis lacus lacinia gravida rhoncus non nibh.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla augue arcu, iaculis in ullamcorper id, ultrices at sapien. Nunc non lacus sagittis lacus lacinia gravida rhoncus non nibh.</string>
+    <string name="hint_your_comment">Escribe tu comentario</string>
+    <string name="comentarios">Comentarios</string>
+
+    <!-- NewFeed Compartir -->
+    <string name="share">Compartir</string>
+    <string name="hint_an_idea">Comparte una idea o una foto</string>
+    <string name="publish">PUBLICAR</string>
+    <string name="conferenceTitleText">TÍTULO DE LA CONFERENCIA</string>
+    <string name="conference_location">Salón B-4, Edificio B</string>
+    <string name="diary_header_text">Conoce los tips y recomendaciones que tenemos para ti.</string>
+    <string name="view">VER</string>
+    <string name="view_map">VER MAPA</string>
+    <string name="conference">Conferencia</string>
+    <string name="add_note">Agregar notas</string>
+    <string name="view_all_notes">Ver todas las notas</string>
+    <string name="puntuation">Puntuación</string>
+    <string name="save">GUARDAR</string>
+    <string name="agregar_nota">Agregar nota</string>
+    <string name="editar">Editar</string>
+    <string name="nav_notes">Notas</string>
+    <string name="search">Buscar</string>
+    <string name="user_name">Kylo Ren</string>
+    <string name="speaker_position">CEO - Director</string>
+    <string name="website_link_sample">www.laresistencia.com</string>
+    <string name="follow_me">Sígueme en:</string>
+    <string name="participant_inconference">Conferencias en las que participa</string>
+    <string name="company_text">Punk E-Marketing and Conculting</string>
+    <string name="send_message">ENVIAR MENSAJE</string>
+    <string name="message_notification">Si quieres enviar y recibir mensajes privados de éste y otros asistentes, activa la función en el menú de ajustes.</string>
+    <string name="goto_settings">IR A AJUSTES</string>
+    <string name="email">kylo@punkmkt.com</string>
+    <string name="phone">+52 (9981) 8685342</string>
+    <string name="hide_text">\u0020Esconder</string>
+    <string name="view_more">... Ver más</string>
+    <string name="sponsor_contact">CONTACTO</string>
+    <string name="sopnsor_adress">Carretera Mérida - Puerto Juárez KM 305 - 304, Abante, 77500 Cancún, Q. Roo.</string>
+    <string name="location_text">UBICACIÓN</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="next">SIGUIENTE</string>
+    <string name="transitionname">transitionname</string>
+</resources>

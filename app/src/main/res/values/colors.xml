@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#006CA7</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="titles">#434041</color>
+    <color name="secondaryText">#8d8d8d</color>
+    <color name="favoriteColor">#e62626</color>
+    <color name="greyColorBG">#f8f8f8</color>
+    <color name="greyColorStrongerBG">#8d8d8d</color>
+    <color name="greyIcons">#8d8d8d</color>
+    <color name="bgGreyDividers">#d6d6d6</color>
+    <color name="iconsActionBar">#B3E5FC</color>
+    <color name="editTextColorWhite">#ffffff</color>
+    <color name="buttons">#29b6f6</color>
+    <color name="deviders">#d6d6d6</color>
+    <color name="logInBg">#f4f4f4</color>
+    <color name="slideBullets">#efeff4</color>
+    <color name="slideBulletSelected">#b3e5fc</color>
+    <color name="transparent">#00000000</color>
+    <color name="facebook">#4267b2</color>
+    <color name="twitter">#1da1f2</color>
+    <color name="linkedin">#0084bf</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+</resources>

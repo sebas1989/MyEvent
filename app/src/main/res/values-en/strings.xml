@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Event</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_news_feed">News Feed</string>
+    <string name="nav_titulo_evento">EVENTO</string>
+    <string name="nav_agenda">Agenda</string>
+    <string name="nav_conferencistas">Conferencistas</string>
+    <string name="nav_asistentes">Asistentes</string>
+    <string name="nav_instalaciones">Instalaciones</string>
+    <string name="nav_patrocinadores">Patrocinadores</string>
+    <string name="nav_mapas">Mapas</string>
+    <string name="nav_titulo_comunidad">COMUNIDAD</string>
+    <string name="nav_noticias">Noticias</string>
+    <string name="nav_faqs">FAQS</string>
+    <string name="nav_fotos">Fotos</string>
+    <string name="nav_titulo_perfil">PERFIL</string>
+    <string name="nav_mensajes">Mensajes</string>
+    <string name="nav_ajustes">Ajustes</string>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newsFeedItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_bottom_cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_cardview"
+            android:paddingBottom="@dimen/padding_cardview"
+            android:paddingLeft="@dimen/padding_general_content"
+            android:paddingRight="@dimen/padding_general_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight=".9"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/userThumb"
+                    android:layout_width="@dimen/width_thumb_user_cardview"
+                    android:layout_height="@dimen/height_thumb_user_cardview"
+                    android:src="@android:drawable/sym_def_app_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#ffffff"/>
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kylo Ren"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginLeft="@dimen/user_name_margin_cardview"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:layout_weight=".1"
+                >
+
+                <ImageView
+                    android:id="@+id/timePublishedIcon"
+                    android:layout_width="@dimen/width_thumb_watch_cardview"
+                    android:layout_height="@dimen/height_thumb_watch_cardview"
+                    android:background="@drawable/ic_watch"/>
+                <TextView
+                    android:id="@+id/timePublishedNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="@dimen/font_size_12"
+                    android:layout_marginLeft="@dimen/margin5"/>
+                <TextView
+                    android:id="@+id/timePublishedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" MINUTOS"
+                    android:textSize="@dimen/font_size_12"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardViewContentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.timqi.collapsibletextview.CollapsibleTextView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/newDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_general_content"
+                android:paddingRight="@dimen/padding_general_content"
+                android:paddingBottom="@dimen/padding_cardview"
+                android:paddingTop="0dp"
+                android:textSize="@dimen/font_size_14"
+                android:text="@string/lorem_ipsum"
+
+                app:collapsedLines="2"
+                app:collapsedText="@string/view_more"
+                app:expandedText="@string/hide_text"
+                app:suffixColor="@color/greyColorStrongerBG"
+                app:suffixTrigger="true"
+                />
+
+            <ImageView
+                android:id="@+id/newsImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_cardview_image"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_general_content"
+                android:paddingRight="@dimen/padding_general_content"
+                >
+
+                <ImageButton
+                    android:id="@+id/likeCheckCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_favorite"
+                    android:layout_gravity="center_vertical" />
+                <TextView
+                    android:id="@+id/favoriteNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="15"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_marginLeft="@dimen/margin5"/>
+                <Button
+                    android:id="@+id/addComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:layout_marginLeft="@dimen/margin_left_icons"
+                    android:gravity="center_vertical|center"
+                    android:paddingRight="40dp"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@drawable/ic_comment"/>
+                <!--ImageView
+                    android:id="@+id/addComment"
+                    android:background="@color/transparent"
+                    android:layout_width="@dimen/margin_left_icons"
+                    android:layout_height="@dimen/margin_left_icons"
+                    android:layout_marginLeft="@dimen/margin_left_icons"
+                    android:background="@drawable/ic_comment"
+                    />
+                <TextView
+                    android:id="@+id/commentsNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="12"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_marginLeft="@dimen/margin5"/-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

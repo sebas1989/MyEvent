@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="punkmkt.com.myevent.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/conferenceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conferenceTitleText"
+            style="@style/styleTitles"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/conferenceWatchIcon"
+                        android:layout_width="@dimen/width_thumb_watch_cardview"
+                        android:layout_height="@dimen/height_thumb_watch_cardview"
+                        android:background="@drawable/ic_watch"/>
+                    <TextView
+                        android:id="@+id/conferenceSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09:00 hrs"
+                        android:textSize="@dimen/font_size_14"
+                        android:layout_marginLeft="@dimen/margin5"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/conferenceLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conference_location"
+                    android:textSize="@dimen/font_size_14"
+                    android:layout_marginLeft="@dimen/margin5"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_map"
+                android:textSize="@dimen/font_size_14"
+                android:layout_weight=".2"
+                android:theme="@style/RaisedButtonLight"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_divider"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/margin_bottom_cardview"
+            android:layout_marginBottom="@dimen/margin_bottom_cardview"
+            />
+
+        <TextView
+            android:id="@+id/conferenceDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/addNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/add_note"/>
+
+        <Button
+            android:id="@+id/viewAllNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/view_all_notes"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/puntuation"
+            android:layout_weight=".5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/oneStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_add_alert"
+                android:src="@drawable/ic_star"/>
+
+            <ImageButton
+                android:id="@+id/twoStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"/>
+
+            <ImageButton
+                android:id="@+id/threeStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"/>
+
+            <ImageButton
+                android:id="@+id/fourStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"/>
+
+            <ImageButton
+                android:id="@+id/fiveStars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

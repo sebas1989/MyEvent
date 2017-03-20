@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news_feed"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/nav_news_feed" />
+    </group>
+
+    <item android:title="@string/nav_titulo_evento">
+        <menu>
+            <item
+                android:id="@+id/nav_agenda"
+                android:icon="@drawable/ic_menu_agenda"
+                android:title="@string/nav_agenda" />
+            <item
+                android:id="@+id/nav_conferencistas"
+                android:icon="@drawable/ic_menu_conferencistas"
+                android:title="@string/nav_conferencistas" />
+            <item
+                android:id="@+id/nav_asistentes"
+                android:icon="@drawable/ic_menu_asistentes"
+                android:title="@string/nav_asistentes" />
+            <item
+                android:id="@+id/nav_instalaciones"
+                android:icon="@drawable/ic_menu_instalaciones"
+                android:title="@string/nav_instalaciones" />
+            <item
+                android:id="@+id/nav_patrocinadores"
+                android:icon="@drawable/ic_menu_patrocinadores"
+                android:title="@string/nav_patrocinadores" />
+            <item
+                android:id="@+id/nav_mapas"
+                android:icon="@drawable/ic_menu_mapas"
+                android:title="@string/nav_mapas" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_titulo_comunidad">
+        <menu>
+            <item
+                android:id="@+id/nav_noticias"
+                android:icon="@drawable/ic_menu_noticias"
+                android:title="@string/nav_noticias" />
+            <item
+                android:id="@+id/nav_faqs"
+                android:icon="@drawable/ic_menu_faqs"
+                android:title="@string/nav_faqs" />
+            <item
+                android:id="@+id/nav_fotos"
+                android:icon="@drawable/ic_menu_fotos"
+                android:title="@string/nav_fotos" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_titulo_perfil">
+        <menu>
+            <item
+                android:id="@+id/nav_mensajes"
+                android:icon="@drawable/ic_menu_mensajes"
+                android:title="@string/nav_mensajes"/>
+            <item
+                android:id="@+id/nav_notes"
+                android:icon="@drawable/ic_menu_mensajes"
+                android:title="@string/nav_notes"/>
+            <item
+                android:id="@+id/nav_ajustes"
+                android:icon="@drawable/ic_menu_ajustes"
+                android:title="@string/nav_ajustes" />
+        </menu>
+    </item>
+
+</menu>

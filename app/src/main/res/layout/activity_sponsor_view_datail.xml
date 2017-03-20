@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    tools:context="punkmkt.com.myevent.view.SponsorViewDatailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@android:color/white"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:statusBarScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+                android:paddingTop="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/margin_bottom_cardview"
+                app:layout_collapseMode="parallax"-->
+
+                <ImageView
+                    android:id="@+id/sponsorBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_centerInParent="true"
+                    app:layout_collapseMode="parallax"/>
+
+            <!--/LinearLayout-->
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_general_content"
+                android:paddingRight="@dimen/padding_general_content"
+                android:paddingBottom="0dp">
+
+                <ImageView
+                    android:id="@+id/sponsorLogo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:src="@drawable/logotipo_coca_cola"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fundación CocaCola"
+                    android:textSize="@dimen/font_size_15"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/margin5"/>
+
+                <TextView
+                    android:id="@+id/newDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_14"
+                    android:text="@string/lorem_ipsum"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_divider"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="@dimen/margin_bottom_cardview"
+                    android:layout_marginBottom="@dimen/margin_bottom_cardview"
+                    />
+
+                <TextView
+                    android:id="@+id/speakerPosition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sponsor_contact"
+                    android:layout_marginBottom="@dimen/margin5"/>
+
+                <TextView
+                    android:id="@+id/webSiteLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/website_link_sample"
+                    android:textColor="@color/buttons"
+                    android:layout_marginBottom="@dimen/margin5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin5">
+
+                    <ImageButton
+                        android:id="@+id/markerIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_marker"/>
+
+                    <TextView
+                        android:id="@+id/emailAdress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sopnsor_adress"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_icons"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/margin5">
+
+                    <ImageButton
+                        android:id="@+id/phoneIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_telephone"/>
+
+                    <TextView
+                        android:id="@+id/phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/phone"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_left_icons"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_general_content"
+                android:paddingRight="@dimen/padding_general_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/font_size_17"
+                    android:text="@string/location_text"
+                    android:layout_weight=".6"/>
+                <Button
+                    android:id="@+id/viewMap"
+                    android:layout_width="0dp"
+                    android:padding="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:textColor="@color/buttons"
+                    android:text="@string/view_map"
+                    android:layout_gravity="end"
+                    android:textSize="@dimen/font_size_17"
+                    android:layout_weight=".4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Coca-Cola"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/editTextColorWhite"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/app_bar"
+        app:dependType="y"
+        app:dependTargetY="-206dp"
+        app:targetY="0dp"
+        app:targetAlpha="1"/>
+
+</android.support.design.widget.CoordinatorLayout>

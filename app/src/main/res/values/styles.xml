@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item-->
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textColorPrimary">@color/secondaryText</item>
+        <item name="colorAccent">@color/secondaryText</item>
+        <item name="colorControlNormal">@color/secondaryText</item> <!-- propiedad de android lolipop en adelante-->
+        <item name="colorControlActivated">@color/secondaryText</item> <!-- propiedad de android -->
+    </style>
+
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/buttons</item>
+        <item name="colorControlHighlight">@color/buttons</item>
+        <item name="@android:textColor">@color/editTextColorWhite</item>
+    </style>
+
+    <style name="RaisedButtonGreyDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/greyIcons</item>
+        <item name="colorControlHighlight">@color/greyIcons</item>
+        <item name="@android:textColor">@color/editTextColorWhite</item>
+        <item name="borderlessButtonStyle">@color/transparent</item>
+    </style>
+
+    <style name="RaisedButtonLight" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/buttons</item>
+        <item name="colorControlHighlight">@color/buttons</item>
+        <item name="@android:textColor">@color/editTextColorWhite</item>
+    </style>
+
+    <style name="AddAnIdeaOrPhoto" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/transparent</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:textColorPrimary">@color/secondaryText</item>
+        <item name="colorAccent">@color/secondaryText</item>
+        <item name="colorControlNormal">@color/secondaryText</item> <!-- propiedad de android lolipop en adelante-->
+        <item name="colorControlActivated">@color/secondaryText</item> <!-- propiedad de android -->
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="styleTitles" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/titles</item>
+        <item name="android:textSize">@dimen/font_size_15</item>
+    </style>
+
+</resources>
