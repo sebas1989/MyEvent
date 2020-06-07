@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1059052491299",
+    "firebase_url": "https://my-event-f7e34.firebaseio.com",
+    "project_id": "my-event-f7e34",
+    "storage_bucket": "my-event-f7e34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059052491299:android:eeb87fd75e34ce13",
+        "android_client_info": {
+          "package_name": "punkmkt.com.myevent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059052491299-kou49o2aibeies527cm0hr46ngqr7r3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "punkmkt.com.myevent",
+            "certificate_hash": "9b2f1221e46bc9d0bb1460a4a7a86d6be217827b"
+          }
+        },
+        {
+          "client_id": "1059052491299-qcak0t452j7encgnqg18048ji1sfcpc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqs-E89tHk-HD9gcekfcltWO93k1FB25Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059052491299-qcak0t452j7encgnqg18048ji1sfcpc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
